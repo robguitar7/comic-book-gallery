@@ -12,12 +12,12 @@ namespace ComicBookGallery.Controllers
         {
             var day = DateTime.Today.DayOfWeek;
 
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)
+            if ( day == DayOfWeek.Friday)
             {
                 return Redirect("/");
               
             }
-            return Content("Hello from the comic books controller! and Today is: "+ day);
+            return Content("Hello from the comic books controller! Today is: "+ day);
         }
     }
 }
